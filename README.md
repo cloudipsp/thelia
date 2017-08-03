@@ -15,6 +15,7 @@ Fondy payment gateway integration.
 Add it in your main Thelia composer.json file
 
 ```
+composer config repositories.cloudipsp git https://github.com/cloudipsp/thelia.git
 composer require cloudipsp/thelia:~1.0
 ```
 
