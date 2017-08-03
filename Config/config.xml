@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<config xmlns="http://thelia.net/schema/dic/config"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://thelia.net/schema/dic/config http://thelia.net/schema/dic/config/thelia-1.0.xsd">
+
+    <forms>
+        <form name="fondy.form.config" class="Fondy\Form\ConfigForm"/>
+    </forms>
+
+    <hooks>
+        <hook id="fondy.hook.back.config" class="Fondy\Hook\Back\ConfigHook" scope="request">
+            <tag name="hook.event_listener" type="backoffice" event="module.configuration"/>
+        </hook>
+
+        <hook id="fondy.hook.front.order" class="Fondy\Hook\Front\OrderHook" scope="request">
+            <tag name="hook.event_listener" type="frontoffice" event="order-payment-gateway.body"/>
+        </hook>
+    </hooks>
+
+    <services>
+        <service id="fondy.service.fondy.request" class="Fondy\Service\FONDY\RequestService">
+            <argument type="service" id="router.fondy"/>
+            <argument type="service" id="thelia.url.manager"/>
+        </service>
+
+        <service id="fondy.service.fondy.response" class="Fondy\Service\FONDY\ResponseService">
+            <argument type="service" id="event_dispatcher"/>
+        </service>
+    </services>
+
+</config>

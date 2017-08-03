@@ -1,0 +1,11 @@
+{
+    "name": "cloudipsp/thelia",
+    "license": "LGPL-3.0+",
+    "type": "thelia-module",
+    "extra": {
+      "installer-name": "Fondy"
+    },
+    "require": {
+        "thelia/installer": "~1.0"
+    }
+}

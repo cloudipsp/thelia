@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="http://thelia.net/schema/dic/module"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://thelia.net/schema/dic/module http://thelia.net/schema/dic/module/module-2_1.xsd">
+    <fullnamespace>Fondy\Fondy</fullnamespace>
+    <descriptive locale="en_US">
+        <title>Fondy online payments</title>
+        <subtitle>Fondy payment gateway</subtitle>
+    </descriptive>
+    <descriptive locale="ru_RU">
+        <title>Fondy онлайн платжи</title>
+        <subtitle>Платежный шлюз Fondy</subtitle>
+    </descriptive>
+    <languages>
+        <language>ru_RU</language>
+        <language>fr_FR</language>
+    </languages>
+    <version>1.0</version>
+    <author>
+        <name>Thelia</name>
+        <email>info@thelia.net</email>
+    </author>
+    <type>payment</type>
+    <thelia>2.1.0</thelia>
+    <stability>other</stability>
+</module>
